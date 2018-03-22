@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Create</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Css/StorageStyle.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/2.css">
+	<link rel="stylesheet" href="Style/jay.css.css">
+	<script type ="text/javascript" src = "Bootstrap/js/jquery-slim.min.js"></script>
+	<script type ="text/javascript" src = "Bootstrap/js/popper.min.js"></script>
+	<script type ="text/javascript" src = "Bootstrap/js/bootstrap.js"></script>
+	<script src="Javascript/Storage.js"></script>
+    <script src="Javascript/3.js"></script>
+   </head>
+<br><div class="text-center">
+                <div class="header">
+    		 <div class="p-3 mb-2 bg-primary text-white"><h1>HOME</h1></div>
+  		</div>
+<nav class="navbar navbar-expand-lg navbar-light bg">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  	<a class="navbar-brand"></a>
+    <ul class="navbar-nav mr-auto">
+      <td>
+       <a href="home.html"><input type=button value="Home"></a>
+      </td>
+	   <td>
+       <a href="create.html"><input type=button value="Create Record"></a>
+      </td>
+	  <td>
+       <a href="Storage.html"><input type=button value="Read Record"></a>
+      </td>
+	  <td>
+       <a href="update.html"><input type=button value="Update Record"></a>
+      </td>
+	  <td>
+       <a href="delete.html"><input type=button value="Delete Record"></a>
+      </td>
+	  <td>
+       <a href="exit.html"><input type=button value="Exit Record"></a>
+      </td>
+	</ul>
+	   <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> 
+              </form> 
+    </ul>
+	
+  </div>
+</nav>
+<br>
+               <img src="images/pic.png" class="rounded float-left" alt="images/pic.png">
+               <img src="images/pic.png" class="rounded float-right" alt="images/pic.png">
+                <br><br><br><figcaption class="figure-caption text-center"><b>It will Records Your Daily Attendance</b></figcaption>
+               </figure>
+<body onload="doShowAll()">
+	<form name=Attendance>
+		<div id="PlayArea1">
+			<table>
+				<br>
+				<tr>
+					<center><b>School Name:</b><center><input type=text name=name>
+					<center><b>School Address</b><center><input type=text name=name>
+					<input type=button value="Save" onclick="SaveItem()">
+					
+				</tr>
+			</table>
+
+		</div>
+    </form>
+
+</body>
+</html>
+   
+    

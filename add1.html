@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Create</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Css/StorageStyle.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/2.css">
+	<link rel="stylesheet" href="Style/jay.css.css">
+	<script type ="text/javascript" src = "Bootstrap/js/jquery-slim.min.js"></script>
+	<script type ="text/javascript" src = "Bootstrap/js/popper.min.js"></script>
+	<script type ="text/javascript" src = "Bootstrap/js/bootstrap.js"></script>
+	<script src="Javascript/storage1.js"></script>
+    <script src="Javascript/3.js"></script>
+   </head>
+<br><div class="text-center">
+                <div class="header">
+    		 <div class="p-3 mb-2 bg-primary text-white"><h1>ADD STUDENTS</h1></div>
+  		</div>
+<nav class="navbar navbar-expand-lg navbar-light bg">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  	<a class="navbar-brand"></a>
+     <ul class="navbar-nav mr-auto">
+	  <td>
+       <a href="create.html"><input type=button value="<<"></a>
+      </td>
+      <td>
+       <a href="add1.html"><input type=button value="Add Students"></a>
+      </td>
+	  <td>
+       <a href="record.html"><input type=button value="List of Students"></a>
+      </td>
+	  <td>
+       <a href="list.html"><input type=button value="Check Attendance"></a>
+      </td>
+	  <td>
+       <a href="storage.html"><input type=button value=">>"></a>
+      </td>
+	</ul>
+	
+  </div>
+</nav>
+	
+<br>
+	<script>
+	   function add(){
+	       var key = document.getElementById('key');
+		   var val = document.getElementById('value');
+		   if(!(key.value && val.value)){
+		      alert("Please don't leave empty fields");
+		   }else{
+		       localStorage.setItem(key.value, val.value);
+		   }
+		   location.reload();
+		   
+	   }
+	</script>
+	</head>
+	<body>
+	    <div align="center" class="form-save">
+		   <table>
+		     <tr>
+			    <td>STUDENTS ID NUMBER:</td>
+				<td><input type="text" id="key" name="person"/></td>	
+		     </tr>
+			 <tr>
+			    <td>STUDENTS FULL NAME:</td>
+				<td><input type="text" id="value" search="name"/></td>
+			 </tr>
+			
+			    <td colspan="2">
+				   <center><button type="button" onclick="add()"><h3>Save</h3></button>
+				   <br><br>
+				   <button style="background: red" type="button" onclick="localStorage.clear(); location.reload()">Clear</button>
+				</td>
+			 
+		   </table>
+		</div>
+		
+	</body>
+</html>

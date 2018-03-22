@@ -1,0 +1,13 @@
+div.header{
+	color: dark;
+	font-family:"Monotype corsiva";
+	heigth:40px;
+	width:1310;
+}
+a:link{
+	color: white;
+	font-family:"Bell MT";
+}
+body{
+    Background:cyan;
+}
